@@ -1,0 +1,56 @@
+java is a programming language
+spring is a framework ( To make development easy )
+
+===> UI => frontend (end user)
+
+
+** Two types of network are there: Internet and Intranet
+
+** HTTP : It is a  protocol to talk to applications which are web based
+
+
+===> Backend => It is divided into three parts :
+
+1. Web layer : logic which have capability to receive data over the internet
+// web layer means such a layer which has capability to receive date from the internet or web or https
+and give data to backend for further processing ...
+// it should have a logic to give back the data or https request to the clients or network
+
+Technologies : servlet and JSP
+
+
+2. Service layer : Its a business layer
+// Its a layer where we write actual functionality or actual purpose of the application
+
+3. Repository layer: we write logic responsible to connect with database, to store the data, to retrieve the data
+
+====> Database : Mysql ,No sql ,Casandra , oracle
+
+// framework which can take care of all three layers with extra features is spring frame work
+// springBoot ===> spring framework + extra capabilities
+
+
+
+=====> spring core: can be written in
+// xml
+// xml + Annotation
+// java config + Annotation
+// springBoot + Annotation
+
+
+
+====> spring has one battle field : Inversion of control (IOC)
+
+java classes -------> spring IOC <-----------config file
+
+// we have to give java classes to spring IOC
+// we have to tell spring what to do .....telling it what to is called config file
+
+// this config file can be in:
+1. xml
+2. Annotation
+// its a way to tell spring what we need or what to do with java classes via xml or Annotation
+
+====> Bean: object or instance created and managed by spring framework is called Bean
+
+
