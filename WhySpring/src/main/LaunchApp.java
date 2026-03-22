@@ -14,6 +14,10 @@ package main;
 //    }
 //}
 
+import services.AIEngineering;
+import services.Devops;
+import services.SystemDesign;
+
 // 2. ===> Inheritance : here also any changes on Alpha will effect Beta
 class Alpha {
     public void disp(){
@@ -33,6 +37,16 @@ class Beta extends Alpha{
 
 public class LaunchApp {
     public static void main(String[] args) {
-
+        Devops dev = new Devops(); //dependent
+        dev.registerTheCourse(900);
+        AIEngineering Ai = new AIEngineering(); //dependent
+        SystemDesign sd = new SystemDesign(); //dependent
+        Hello h = new Hello(); //target
+        h.setCourse(dev);
+        boolean status =  h.buyTheCourse(500);
+        if (status)
+            System.out.println("Successful");
+        else
+            System.out.println("Failed to enroll");
     }
 }
