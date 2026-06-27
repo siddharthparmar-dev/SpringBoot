@@ -17,5 +17,4 @@ public class SpringBoot3Application {
 		alien.show();
 		alien.display();
 	}
-
 }

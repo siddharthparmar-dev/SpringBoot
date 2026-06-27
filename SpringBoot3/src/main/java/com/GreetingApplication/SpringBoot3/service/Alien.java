@@ -1,5 +1,7 @@
 package com.GreetingApplication.SpringBoot3.service;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -25,4 +27,13 @@ public class Alien {
         System.out.println("Show method of alien");
     }
 
+    @PostConstruct
+    public void post(){
+        System.out.println("Post method of alien");
+    }
+
+    @PreDestroy
+    public void pre(){
+        System.out.println("Pre method of alien");
+    }
 }
