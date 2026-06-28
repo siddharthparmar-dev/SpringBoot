@@ -2,9 +2,11 @@ package com.GreetingApplication.SpringBoot3.service;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 @Component
+@Lazy
 public class Alien {
 
     static {
@@ -29,11 +31,11 @@ public class Alien {
 
     @PostConstruct
     public void post(){
-        System.out.println("Post method of alien");
+        System.out.println("Post construct method of alien");
     }
 
     @PreDestroy
     public void pre(){
-        System.out.println("Pre method of alien");
+        System.out.println("Pre destory method of alien");
     }
 }

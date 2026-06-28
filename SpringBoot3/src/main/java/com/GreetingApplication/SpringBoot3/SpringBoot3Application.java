@@ -15,6 +15,6 @@ public class SpringBoot3Application {
 //		System.out.println(greetingService.generateGreeting("Siddharth"));
 		Alien alien = container.getBean(Alien.class);
 		alien.show();
-		alien.display();
+		Alien.display();
 	}
 }
