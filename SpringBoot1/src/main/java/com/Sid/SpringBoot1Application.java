@@ -2,12 +2,15 @@ package com.Sid;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class SpringBoot1Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBoot1Application.class, args);
+		ConfigurableApplicationContext context = SpringApplication.run(SpringBoot1Application.class, args);
+		int count = context.getBeanDefinitionCount();
+		System.out.println(count);
 	}
 
 }

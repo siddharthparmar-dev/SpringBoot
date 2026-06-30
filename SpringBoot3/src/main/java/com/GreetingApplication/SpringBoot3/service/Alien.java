@@ -3,10 +3,10 @@ package com.GreetingApplication.SpringBoot3.service;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Lazy
 public class Alien {
 
     static {
@@ -38,4 +38,5 @@ public class Alien {
     public void pre(){
         System.out.println("Pre destory method of alien");
     }
+
 }

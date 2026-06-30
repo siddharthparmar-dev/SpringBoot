@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SpringBoot2" />
         <module name="SpringBoot1" />
+        <module name="SpringBoot4" />
         <module name="SpringBoot3" />
       </profile>
     </annotationProcessing>
@@ -23,6 +24,7 @@
       <module name="SpringBoot2" options="-parameters" />
       <module name="SpringBoot2 (1)" options="-parameters" />
       <module name="SpringBoot3" options="-parameters" />
+      <module name="SpringBoot4" options="-parameters" />
     </option>
   </component>
 </project>
